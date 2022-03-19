@@ -3,8 +3,8 @@ import random
 numero_aleatorio = random.randrange(0,100)
 gane = False
 print("Tenés 3 intentos para adivinar un entre 0 y 100")
-intento = 1
-while intento < 4 and not gane:
+intento = 0
+while intento < 5 and not gane:
     numero_ingresado = int(input('Ingresa tu número: '))
     if numero_ingresado == numero_aleatorio:
         print('Ganaste! y necesitaste {} intentos!!!'.format(intento))
